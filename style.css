@@ -141,12 +141,13 @@ header {
     position: absolute;
     overflow-y: scroll;
     background: var(--white);
-    width: 100%;
+    width: 95%;
     height: 700px;
-    top: 100%;
+    top: 10%;
     left: 0;
     right: 0;
     display: none;
+    margin: 0;
 }
 
 .cart-container::-webkit-scrollbar{

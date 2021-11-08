@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Zadatak-9</title>
 </head>
 <body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Jewelry</a>
+                <button  type="button" class="navbar-toggle"> <i class="fas fa-bars"></i> </button>
+                <div class="navbar-collapse">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <button type="button" id="cart-btn"><i class="fas fa-shopping-cart"><span id="cart-count-info">0</span></i></button>
+                    <div class="cart-container">
+                        <div class="cart-list">
+                            <div class="cart-item">
+                                <img src="images/sofa.png" alt="product image">
+                                <div class="cart-item-info">
+                                    <h3 class="cart-item-name">Black sofa</h3>
+                                    <span class="cart-item-category">Sofa</span>
+                                    <span class="cart-item-price">$200.00</span>
+                                </div>
+                                <button type="button" class="cart-item-delete"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <h3>Total: $</h3>
+                            <span id="cart-total-value">$200.00</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
   
     <script src="main.js"></script>
 </body>

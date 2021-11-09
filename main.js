@@ -145,7 +145,7 @@ function deleteProduct(e) {
     if(e.target.tagName === "BUTTON"){
         cartItem = e.target.parentElement;
         cartItem.remove(); 
-    } else if(e.target.tagName === "I"){
+    } else if(e.target.tagName === "i"){
         cartItem = e.target.parentElement.parentElement;
         cartItem.remove(); 
     }

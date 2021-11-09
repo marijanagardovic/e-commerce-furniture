@@ -153,8 +153,8 @@ function deleteProduct(e) {
     }
 
     let products = getProductFromSotarge();
-    let updatedProducts = products.filter((product) => {
-        return product.id !== parseFloat(cartItem.getAttribute('data-id'));
+    let updatedProducts = products.forEach(product => {
+        return product.id !== parseInt(cartItem.dataset.id);
     });
     localStorage.setItem('products', JSON.stringify(updatedProducts)); 
     updateInfo();

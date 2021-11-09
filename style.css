@@ -5,7 +5,8 @@
     --black: #000;
     --grayish-white: #fafafa;
     --gray: rgb(94, 88, 88);
-    --main-color: rgb(131, 82, 19);
+    --main-color: rgb(13, 117, 100);
+    --main-color-hover: rgb(65, 148, 134);
     --white:#fff;
 }
 
@@ -13,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -280,7 +282,7 @@ header {
 
 .product-image {
     padding: 0.5rem 0;
-    height: 350px;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
@@ -339,8 +341,42 @@ header {
     opacity: 0.6;
 }
 
+footer {
+    background-color: var(--grayish-white);
+    padding: 2.5rem;
+}
 
+.left-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+}
 
+.left-group .text {
+    margin-top: 0.8rem;
+}
+
+.right-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.right-group .fab {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.right-group .fab:hover {
+    color: var(--main-color-hover);
+}
 
 
 @media (min-width: 900px) {

@@ -140,6 +140,8 @@ function findCartInfo() {
 
 findCartInfo();
 
+cartList.addEventListener('click', deleteProduct);
+
 function deleteProduct(e) {
     let cartItem;
     if(e.target.tagName === "BUTTON"){
@@ -151,11 +153,11 @@ function deleteProduct(e) {
     }
 
     let products = getProductFromSotarge();
-    let updatedProducts = products.filter(product => {
-        return product.id != parseInt(cartItem.id);
+    let updatedProducts = products.filter((product) => {
+        return product.id !== parseFloat(cartItem.getAttribute('data-id'));
     });
     localStorage.setItem('products', JSON.stringify(updatedProducts)); 
     updateInfo();
 }
 
-cartList.addEventListener('click', deleteProduct);
+

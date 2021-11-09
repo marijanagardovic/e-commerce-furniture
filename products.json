@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "Black Sofa",
+        "category" : "Sofa",
+        "price" : "120.25",
+        "imgSrc" : "images/sofa.png"
+    },
+
+    {
+        "name": "Wood chair",
+        "category": "Chair",
+        "price": "56.50",
+        "imgSrc": "images/chair.png"
+    },
+    
+    {
+        "name": "Lux Dresser",
+        "category": "Dresser",
+        "price": "180.90",
+        "imgSrc": "images/dresser.png"
+    },
+
+    {
+        "name": "Modern Piano",
+        "category": "Piano",
+        "price": "300.00",
+        "imgSrc": "images/piano.png"
+    },
+
+    {
+        "name": "Golden Mirror",
+        "category": "Mirror",
+        "price": "25.00",
+        "imgSrc": "images/mirror.png"
+    },
+
+    {
+        "name": "Brown Pillow",
+        "category": "Pillow",
+        "price": "35",
+        "imgSrc": "images/pillow.png"
+    }
+    
+]

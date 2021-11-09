@@ -39,6 +39,26 @@
         "category": "Pillow",
         "price": "35",
         "imgSrc": "images/pillow.png"
+    },
+
+    {
+        "name": "Rocking Chair",
+        "category": "Chair",
+        "price": "78.00",
+        "imgSrc": "images/rocking_chair.png"
+    },
+
+    {
+        "name": "Single Bed",
+        "category": "Bed",
+        "price": "150.00",
+        "imgSrc": "images/bed.png"
+    },
+
+    {
+        "name": "Armchair",
+        "category": "Chair",
+        "price": "80.00",
+        "imgSrc": "images/armchair.png"
     }
-    
 ]

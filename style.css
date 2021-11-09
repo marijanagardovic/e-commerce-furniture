@@ -178,13 +178,16 @@ header {
 .cart-item-delete {
     position: absolute;
     right: 0;
-    transform: translateX(100%);
-    padding: 0.5rem 0.8rem;
+    transform: translateX(550%);
+    padding: 0.2rem 0.7rem ;
     border: none;
     background: var(--main-color);
     color: var(--white);
     border-radius: 7px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart-item-delete:hover {
@@ -416,5 +419,11 @@ footer {
 
     .right-group {
         width: 50%;
+    }
+}
+
+@media (max-width: 426px) {
+    .cart-item-delete {
+        transform: translateX(250%);
     }
 }

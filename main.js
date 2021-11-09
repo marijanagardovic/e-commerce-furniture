@@ -6,6 +6,7 @@ const productList = document.querySelector('.product-list');
 const cartList = document.querySelector('.cart-list');
 const totalValue = document.querySelector('#cart-total-value');
 const countInfo = document.querySelector('#cart-count-info');
+const deleteBtn = document.querySelector('.cart-item-delete');
 let cartItemId = 1;
 
 
@@ -151,7 +152,7 @@ function deleteProduct(e) {
 
     let products = getProductFromSotarge();
     let updatedProducts = products.filter(product => {
-        return product.id !== parseInt(cartItem.dataset.id);
+        return product.id != parseInt(cartItem.id);
     });
     localStorage.setItem('products', JSON.stringify(updatedProducts)); // updating the product list after the deletion
     updateInfo();

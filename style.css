@@ -358,7 +358,7 @@ footer {
     justify-content: center;
     text-align: center;
     margin: auto;
-    max-width: 50%;
+    width: 50%;
 }
 
 .left-group .text {
@@ -396,5 +396,25 @@ footer {
     .product-list {
         display: grid;
         grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 880px) {
+    .home-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 85%;
+        margin: auto;
+        margin-top: 0.5em;
+    }
+
+    .left-group {
+        width: 95%;
+    }
+
+    .right-group {
+        width: 50%;
     }
 }

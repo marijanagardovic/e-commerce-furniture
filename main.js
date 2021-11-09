@@ -57,7 +57,7 @@ function addToCartList(product) {
             <span class="cart-item-category">${product.category}</span>
             <span class="cart-item-price">${product.price}</span>
         </div>
-        <button type="button" class="cart-item-delete"><i class="fas fa-times"></i></button>
+        <button type="button" class="cart-item-delete">x</button>
     </div> 
     `;
     cartList.appendChild(cartItem);
@@ -145,12 +145,9 @@ cartList.addEventListener('click', deleteProduct);
 function deleteProduct(e) {
     let cartItem;
     if(e.target.tagName === "BUTTON"){
-        cartItem = e.target.parentElement;
-        cartItem.remove(); 
-    } else if(e.target.tagName === "i"){
         cartItem = e.target.parentElement.parentElement;
         cartItem.remove(); 
-    }
+    } 
 
     let products = getProductFromSotarge();
     let updatedProducts = products.forEach(product => {

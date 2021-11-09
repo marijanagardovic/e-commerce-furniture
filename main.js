@@ -154,7 +154,7 @@ function deleteProduct(e) {
     let updatedProducts = products.filter(product => {
         return product.id != parseInt(cartItem.id);
     });
-    localStorage.setItem('products', JSON.stringify(updatedProducts)); // updating the product list after the deletion
+    localStorage.setItem('products', JSON.stringify(updatedProducts)); 
     updateInfo();
 }
 

@@ -177,13 +177,18 @@ header {
 
 .cart-item-delete {
     position: absolute;
-    right: 20px;
+    right: 0;
+    transform: translateX(100%);
     padding: 0.5rem 0.8rem;
     border: none;
     background: var(--main-color);
     color: var(--white);
     border-radius: 7px;
     font-size: 20px;
+}
+
+.cart-item-delete:hover {
+    background-color: var(--main-color-hover);
 }
 
 .cart-item img {

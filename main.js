@@ -157,7 +157,6 @@ function deleteProduct(e) {
                 productsArray.splice(index, 1)
             }
         });
-
         localStorage.setItem('productsList', JSON.stringify(products));  
         updateInfo();
     } 

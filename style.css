@@ -386,7 +386,6 @@ footer {
     color: var(--main-color-hover);
 }
 
-
 @media (min-width: 900px) {
     .cart-container {
         width: 480px;

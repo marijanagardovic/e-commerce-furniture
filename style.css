@@ -145,7 +145,7 @@ header {
     background: var(--white);
     width: 95%;
     height: 490px;
-    top: 10%;
+    top: 13%;
     left: 2%;
     right: 0;
     display: none;
@@ -162,13 +162,27 @@ header {
 }
 
 .cart-item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     padding: 1rem 0.5rem;
     height: 140px;
     border-bottom: 1px solid var(--gray);
+}
+
+.cart-item input {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    left: 130%;
+    background: var(--grayish-white);
+    border: 2px solid var(--main-color);
+    border-radius: 7px;
+}
+
+.cart-item input:focus {
+    border: 2px solid var(--main-color);
 }
 
 .cart-item:last-child {
@@ -423,6 +437,6 @@ footer {
 
 @media (max-width: 426px) {
     .cart-item-delete {
-        transform: translateX(250%);
+        transform: translateX(175%);
     }
 }

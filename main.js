@@ -8,6 +8,7 @@ const totalValue = document.querySelector('#cart-total-value');
 const countInfo = document.querySelector('#cart-count-info');
 const deleteBtn = document.querySelector('.cart-item-delete');
 let cartItemId = 1;
+const chair = document.querySelector('#chair');
 
 
 toggleBtn.addEventListener('click', () => {
@@ -147,14 +148,27 @@ function deleteProduct(e) {
     if(e.target.tagName === "BUTTON"){
         cartItem = e.target.parentElement.parentElement;
         cartItem.remove(); 
-    } 
 
-    let products = getProductFromSotarge();
-    let updatedProducts = products.forEach(product => {
-        return product.id !== parseInt(cartItem.dataset.id);
-    });
-    localStorage.setItem('products', JSON.stringify(updatedProducts)); 
-    updateInfo();
+        let products = getProductFromSotarge();
+        console.log(products)
+        products.forEach((product, index, productsArray) => {
+            
+            if(product.id === parseInt(cartItem.dataset.id)) {
+                productsArray.splice(index, 1)
+            }
+        });
+
+        localStorage.setItem('productsList', JSON.stringify(products));  
+        updateInfo();
+    } 
 }
 
+//category by clicking button
 
+chair.addEventListener('click', () => {
+    for(var i=0; i < productList.length; i++) {
+        if(productList[i].category !== "chair") {
+            productList[i].style.display = 'none';
+        }
+    }   
+}) 

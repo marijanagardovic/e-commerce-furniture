@@ -58,7 +58,7 @@ function addToCartList(product) {
             <span class="cart-item-price">${product.price}</span>
         </div>
             <button type="button" class="cart-item-delete">x</button>
-            <input type="number" id="#numberOfItems" min="0" max="100" >
+            <input type="number" id="#numberOfItems" min="0" max = "100" >
     </div> 
     `;
     cartList.appendChild(cartItem);
@@ -161,5 +161,3 @@ function deleteProduct(e) {
         updateInfo();
     } 
 }
-
- 
